@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.about-us-container{
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-image: url(../css/Resources/norbert-kundrak-shMymEhk86g-unsplash.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-us-content{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.about-us{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fugaz One', cursive;
+    line-height: 5rem;
+}
+
+.about{
+    font-size: 5rem;
+    animation: about 700ms cubic-bezier(0, 0, 0.19, 0.97) forwards;
+    
+}
+.us{
+    font-size: 5rem;
+    color: rgba(230, 201, 15, 0.95);
+    animation: us 800ms cubic-bezier(0, 0, 0.19, 0.97) forwards;
+}
+
+.faq{
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 120rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+}
+
+.line{
+    height: calc(90vh - 4rem);
+    width: 3rem;
+    background-color: #50c5de;
+}
+
+.about-us-text{
+    animation: about-us-text 900ms cubic-bezier(0, 0, 0.19, 0.97) forwards;
+}
+
+@keyframes about {
+    0%   {
+        opacity: 0;
+        transform: translateX(6rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes us {
+    0%   {
+        opacity: 0;
+        transform: translateX(6rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+
+  @keyframes about-us-text {
+    0%   {
+        opacity: 0;
+        transform: translateX(6rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  

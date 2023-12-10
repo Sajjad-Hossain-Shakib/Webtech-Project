@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sign-up{
+    background-image: url(../css/Resources/bence-balla-schottner-F7WRA9bdjb0-unsplash.jpg);
+    background-size: cover;
+    height: calc(100vh - 4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.sign-up-image{
+    height: 38rem;
+    width: 35rem;
+    background-image: url(../css/Resources/lady\ looking\ at\ the\ box.jpg);
+    background-size: cover;
+}
+
+.sign-up-image-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18rem;
+}
+
+.one-click{
+    display: flex;
+    flex-direction: column;
+}
+
+.one{
+    font-family: 'Paytone One', sans-serif;
+    color: whitesmoke;
+    font-size: 4rem;
+    animation: one 500ms cubic-bezier(0, 0, 0.19, 0.97) forwards;
+}
+
+.click{
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 2.5rem;
+    color: rgba(230, 201, 15, 0.95);
+    transform: rotate(345deg);
+    margin-left: 5rem;
+    animation: click 500ms cubic-bezier(0, 0, 0.19, 0.97) forwards;
+}
+
+.one-click-text{
+    color: white;
+    padding: 2rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    animation: one-text 700ms cubic-bezier(0, 0, 0.19, 0.97) forwards;
+}
+
+form{
+    background: rgba(230, 201, 15, 0.95);
+    height: 38rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-move{
+    font-family: 'Paytone One', sans-serif;
+    color: #282828;
+    font-size: 2.5rem;
+    transform: translate(-5rem, -2rem);
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.7rem 5rem 0.7rem 5rem;
+    border-radius: 50px;
+    border: none;
+}
+
+.submit{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #01232a;
+    border: solid 5px #50c5de;
+    box-shadow:0px 0px 15px rgba(125, 125, 125, 0.663); 
+    transition: 200ms;
+}
+
+.submit:hover{
+    background-color: #50c5de;
+    color: rgb(49, 49, 49);
+    font-weight: 600;
+}
+
+@keyframes one {
+    0%   {
+        opacity: 0;
+        transform: translateY(-6rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes click {
+    0%   {
+        opacity: 0;
+        transform: translateY(-6rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
+  @keyframes one-text {
+    0%   {
+        opacity: 0;
+        transform: translateX(-8rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
